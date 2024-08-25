@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>World Countries</title>
+      <link rel="shortcut icon" href="./images/earth.ico" type="image/x-icon">
+      <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <div class="loading">
+            <img style="width: 200px;" src="./images/giphy.webp" alt="">
+      </div>
+      <h1 class="error-page"></h1>
+      <header class="header">
+            <div class="container">
+                  <h1 class="logo">Where in the world?</h1>
+                  <div class="mode" onclick="changeMode()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+                        <span class="mode-title">Dark Mode</span>
+                  </div>
+            </div>
+      </header>
+      <main class="main">
+            <div class="container">
+                  <div class="main-top">
+                        <div class="search">
+                              <svg class="search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="search">
+                                    <path id="icon-search-black" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 11H11.7L11.4 10.7C12.4 9.6 13 8.1 13 6.5C13 2.9 10.1 0 6.5 0C2.9 0 0 2.9 0 6.5C0 10.1 2.9 13 6.5 13C8.1 13 9.6 12.4 10.7 11.4L11 11.7V12.5L16 17.5L17.5 16L12.5 11ZM6.5 11C4 11 2 9 2 6.5C2 4 4 2 6.5 2C9 2 11 4 11 6.5C11 9 9 11 6.5 11Z" fill="#848484"/>
+                                    </g>
+                              </svg>
+                              <input class="search-input" type="text" name="" id="" placeholder="Search for a country…">
+                        </div>
+                        <div class="select-box">
+                              <select class="select" name="" id="">
+                                    <option value="all">Filter by Region</option>
+                                    <option value="africa">Africa</option>
+                                    <option value="america">America</option>
+                                    <option value="asia">Asia</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="oceania">Oceania</option>
+                              </select>
+                              <div class="dropdown">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g id="expand-more">
+                                          <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8.45 0.450001L5 3.9L1.55 0.450001L0.5 1.5L5 6L9.5 1.5L8.45 0.450001Z" fill="black"/>
+                                          </g>
+                                          </svg>
+                                          
+                              </div>
+                        </div>
+                  </div>
+                  <div class="countries-row">
+                        
+                  </div>
+                  
+            </div>
+      </main>
+
+
+      <script src="./mode.js"></script>
+      <script src="./callApi.js"></script>
+</body>
+</html>
